@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initital-scale=1.0">
+        <title>JavaScirpt change html</title>
+
+    </head>
+    <body>
+        <h1>My first paragrah "JavaScript"</h1>
+        <p id="demo">
+            JavaScript can change the style of HTML.
+        </p>
+        <script>
+            function myFunction(){
+	x=document.getElementById("demo") // 找到元素
+	x.style.color="#ff0000";          // 改变样式
+}
+        </script>
+        <button type="button" onclick="myFunction()">点击这里</button>
+    </body>
+</html>
