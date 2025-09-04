@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devivce-width initial-scale=1.0">
+        <title>How to change the content</title>
+    </head>
+    <body>
+        <h1> My javascript to change the content.</h1>
+        <p id="demo">
+            Javascript can change the Html element.
+
+        </p>
+        <script>
+            function myFunction(){
+                x=document.getElementById("demo"); //find the element
+                x.innerHTML="Hello JavaScript!"; // change the content;
+            }
+        </script>
+        <button type="button" onclick="myFunction()">click here.</button>
+    </body>
+</html>
