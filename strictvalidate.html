@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpot" content="width =device-width initial-scale=1.0">
+        <title>JavaScript validate</title>
+    </head>
+    <body>
+        <h1>First javascript validate</h1>
+        <p>Please input number ,otherwise the browser will alert</p>
+        <input id="demo" type="text">
+        <script>
+            function myFunction(){
+                var x=document.getElementById("demo").value;
+                if(isNaN(x)||x.replace(/(^\s*)|(\s*$)/g,"")==""){
+                    alert("NO numbers")
+                }
+            }
+        </script>
+        <button type="button" onclick="myFunction()">Click here</button>
+    </body>
+        
+</html>
