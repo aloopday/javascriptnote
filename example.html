@@ -1,0 +1,8 @@
+
+const z = 10;
+// z = 20; // 报错，常量不可重新赋值
+if (true) {
+    const z = 20; // 不同的常量
+    console.log(z); // 输出 20
+}
+console.log(z); // 输出 10
