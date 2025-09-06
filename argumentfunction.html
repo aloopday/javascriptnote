@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>argument</title>
+    </head>
+    <body>
+        <p>Click this button,to invoke the function with arguments</p>
+        <button type="button" onclick="myFunction('Harry Potter','wizard')">Click here</button>
+        <br>
+        <br />
+        <p>在调用函数时，您可以向其传递值，这些值被称为参数。
+
+这些参数可以在函数中使用。
+
+您可以发送任意多的参数，由逗号 (,) 分隔：
+</p>
+
+<p> NOtice <strong > the value is called  argument. when you difine the funciton </strong></p>
+        <button type="button" onclick="myFunction('Charles' ,'Wong')">Click me</button>
+        <script>
+            function myFunction(name,job){
+                alert("welcome "+ name +", the "+job);
+            }
+        </script>
+    </body>
+</html>
