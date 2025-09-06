@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="view" content="width=device-width initial-scale=1.0">
+    <title>object method</title>
+
+    </head>
+    <body>
+        <p>Create the method of object.</p>
+        <p>The method as a definition of function is stored in property of object.</p>
+        <p id="demo"></p>
+        <script>
+            var person={
+                firstName:"Charles",
+                lastName:"Wang",
+                id:1987,
+                fullName: function(){
+                    return this.firstName + " " +this.lastName;
+                }
+            }
+            document.getElementById("demo").innerHTML=person.fullName();
+        </script>
+    </body>
+    
+</html>
