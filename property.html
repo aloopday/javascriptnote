@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Properties</title>
+    </head>
+    <body>
+        <p>
+            There are two ways to use property: .property or ["property"].
+        </p>
+        <p id="demo"></p>
+        <script>
+            var person={
+                firstName:"Charles",
+                lastName:"Wang",
+                id:1987
+            };
+            document.getElementById("demo").innerHTML= person["firstName"]+
+            ' ' +person.lastName;
+        </script>
+    </body>
+</html>
