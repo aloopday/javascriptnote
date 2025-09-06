@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Global Scope</title>
+    </head>
+    <body>
+        <p>Global scope can be accesssed by any element.</p>
+        <p id="demo"></p>
+        
+        <script>
+            var carName= "Tesla";
+            myFunction();
+            function myFunction(){
+
+                document.getElementById("demo").innerHTML=carName;
+            }
+        </script>
+    </body>
+</html>
