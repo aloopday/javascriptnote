@@ -10,6 +10,8 @@
         <p>Create the method of object.</p>
         <p>The method as a definition of function is stored in property of object.</p>
         <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
         <script>
             var person={
                 firstName:"Charles",
@@ -20,6 +22,8 @@
                 }
             }
             document.getElementById("demo").innerHTML=person.fullName();
+            document.getElementById("demo1").innerHTML="no  bracket  " +person.fullName;
+            document.getElementById("demo2").innerHTML="Have bracket " + person.fullName();
         </script>
     </body>
     
