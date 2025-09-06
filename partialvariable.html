@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Partial variable</title>
+    </head>
+    <p>You can access the variable of function.</p>
+    <p id="demo"></p>
+    <script>
+        myFunction();
+        document.getElementById("demo").innerHTML= "The carname type is "+ typeof carName;
+        function myFunction(){
+            var carName="Tesla";
+            
+        }
+    </script>
+</html>
