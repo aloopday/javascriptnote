@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>module</title>
+    </head>
+    <body>
+        <p>set y=5, caculate x=y%2 , then display outcome</p>
+        <button onclick="myFunction()">click me </button>
+        <p id="demo">
+
+        </p>
+        <script>
+            function myFunction(){
+                let y=5;
+                let x=y%2;
+                let result=document.getElementById("demo")
+                result.innerHTML="result is " +x;
+            }
+        </script>
+    </body>
+</html>

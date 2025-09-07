@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Self Add</title>
+    </head>
+    <body>
+        <p> set y=5 ,caculate x = ++y; display result.  
+        </p>
+        <p id="demo"></p>
+        <button type="button" onclick="myFunction()">click me </button>
+        <script>
+            function myFunction(){
+                let y=5;
+                let x=++y;
+                let outcome= document.getElementById("demo")
+                outcome.innerHTML= "x="+x+","+"y="+y;
+
+            }
+        </script>
+    </body>
+</html>
