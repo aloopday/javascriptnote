@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>prodecrease</title>
+    </head>
+    <body>
+        <p>set y=5, x=--y;</p>
+        <p id="demo"></p>
+        <button type="button" onclick="myFunction()">Click me </button>
+        <script>
+            function myFunction(){
+                let y=5;
+                let x=--y;
+                let result=document.getElementById("demo")
+                result.innerHTML="x="+x+","+"y="+y;
+            }
+        </script>
+    </body>
+</html>
