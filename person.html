@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>undefined</title>
+    </head>
+    <body>
+        <p>variable can set <b>undefined</b>to clear out</p>
+        <p id="demo"></p>
+        <script>
+            let person={firstName:"charles",lastName:"wang",age:39};
+                person=undefined;
+                document.getElementById("demo").innerHTML=person + "<br>"+typeof person;
+        </script>
+    </body>
+</html>
