@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Switch</title>
+    </head>
+    <body>
+        <h2>Hello condition setence.</h2>
+        <p>click below button to display the message of this date.</p>
+        <button type="button" onclick="myFunction()">Try It.</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let x;
+                let d=new Date().getDay();
+                switch(d){
+                    case 6: x="Today is saturday!"
+                    break;
+                    case 0: x="Today is sunday!"
+                    break;
+                    default: x="looking forward to weekend."
+                }
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    </body>
+</html>
