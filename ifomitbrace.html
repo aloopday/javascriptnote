@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>if loop</title>
+    </head>
+    <body>
+        <h2>If loop</h2>
+        <p id="demo"></p>
+        <button onclick="myFunction()">onclick</button>
+        <script>
+            
+            function myFunction(){
+                let x="",i=0;
+                for(i=0;i<5;i++){
+                    if(i==4) break;
+                    x= x+"This number is "+i+ "<br>";
+      }
+      document.getElementById("demo").innerHTML=x;
+            }
+
+        </script>
+    </body>
+</html>
