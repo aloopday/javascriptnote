@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>For Loop</title>
+    </head>
+    <body>
+        <p>click the loop to circle 5 </p>
+        <button onclick="myFunction()">Click here</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let x="";
+                for(let i=0;i<5;i++){
+                    x=x +" This number is " +i + "<br>"
+                }
+                document.getElementById("demo").innerHTML=x;
+            }
+        </script>
+    </body>
+</html>
