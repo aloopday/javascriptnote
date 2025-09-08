@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>null compare undefined</title>
+    </head>
+    <body>
+        <h2>compare null and undefined</h2>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML=
+            typeof undefined + "<br>"+
+            typeof null +"<br>"+
+            (null === undefined)+"<br>"+
+            (null==undefined);
+        </script>
+    </body>
+</html>
