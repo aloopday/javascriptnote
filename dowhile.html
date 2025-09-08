@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>do while</title>
+    </head>
+    <body>
+        <h2>Do while loop</h2>
+        <p id="demo"></p>
+        <button type="button" onclick="myFunction()">Click me </button>
+        <script>
+
+            function myFunction(){
+                let x="",i=0;
+            do{
+                x=x+"This number is " +i+"<br>";
+                i++;
+            }
+            while(i<6);
+            document.getElementById("demo").innerHTML=x;
+
+            }
+            
+        </script>
+    </body>
+</html>
