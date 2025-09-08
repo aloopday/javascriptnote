@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Can vote at age 18 or not.</title>
+    </head>
+    <body>
+        <p>click to check the age</p>
+        age:<input title="_blank" id="age" value="18">
+        <p> Whether achieved vote age!</p>
+        <button onclick="myFunction()">click the button</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let age, voteable;
+                age=document.getElementById("age").value;
+                voteable=(age<18)?"age too young":"age is ok";
+                document.getElementById("demo").innerHTML=voteable;
+            }
+        </script>
+    </body>
+   
+
+</html>
