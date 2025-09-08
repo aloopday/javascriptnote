@@ -14,9 +14,11 @@
                 let x="";
                 for (i=0;i<10;i++){
                     if(i==5){
+                        i++ //加入i++不会进入死循环。
                         continue;
                     }
                     x=x+"This number is" +i +"<br>"
+                    i++;
                 }
                 document.getElementById("demo").innerHTML=x;
             }
