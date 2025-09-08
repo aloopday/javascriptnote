@@ -7,7 +7,7 @@
     </head>
     <body>
         <p>click to check the age</p>
-        age:<input title="_blank" id="age" value="18">
+        age:<input title="_blank" id="age" value="13">
         <p> Whether achieved vote age!</p>
         <button onclick="myFunction()">click the button</button>
         <p id="demo"></p>
@@ -15,7 +15,7 @@
             function myFunction(){
                 let age, voteable;
                 age=document.getElementById("age").value;
-                voteable=(age<18)?"age too young":"age is ok";
+                voteable=(age<=13)?"age too young":"age is ok";
                 document.getElementById("demo").innerHTML=voteable;
             }
         </script>

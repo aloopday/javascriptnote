@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>if sentence</title>
+   </head>
+   <body>
+    <p>If  time is early before 20:00, will generate a "good day"</p>
+    <button onclick="myFunction()">click me </button>
+    <p id="demo"></p>
+    <script>
+        function myFunction(){
+            let x="";
+            let time=new Date().getHours();
+            if(time<20){
+                x="Good day";
+            }
+            document.getElementById("demo").innerHTML=x;
+            
+        }
+    </script>
+   </body>
+</html>
