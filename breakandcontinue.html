@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>for break</title>
+    </head>
+    <body>
+        <p>for break loop</p>
+        <button type="button" onclick="myFunction()">click me </button>
+       
+        <p id="demo"></p>
+      <script>
+        function myFunction(){
+            let x ="", i=0;
+            for(i=0;i<10;i++){
+                if(i==3){
+                    break;
+
+                }
+                x=x+"This number is " + i + "<br>";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+      </script>
+    </body>
+</html>
