@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+    <title>How to juge the array</title>
+
+    </head>
+    <body>
+        <p>jude wheter array or not</p>
+        <p id="demo"></p>
+        <script>
+            let fruits=["banana","Orange","Apple","Mango"];
+            document.getElementById("demo").innerHTML=isArray(fruits);
+            function isArray(myArray){
+                return myArray.constructor.toString().indexOf("Array")>-1;
+            }
+        </script>
+    </body>
+    
+</html>
