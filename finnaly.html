@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Finnaly</title>
+    </head>
+    <body>
+        <p>Whether the result is right or not. The input will input then clear out.</p>
+        <p>Please input 5~10 numbers:</p>
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()">Click me</button>
+        <p id="p01"></p>
+        <script>
+            function myFunction(){
+                let message, x;
+                message = document.getElementById("p01");
+                message.innerHTML = "";
+                x =document.getElementById("demo").value;
+                try{
+                    if(x == "") throw "value is empty";
+                    if(isNaN(x)) throw "value is not a number";
+                    x= Number(x);
+                    if(x>10)    throw "Too greater"  
+                    if(x<5) throw "Too small"   }
+                    catch(err){
+                        message.innerHTML = "Error: " +err + ".";
+                    }
+                    finally {
+                        document.getElementById("demo").value = "";
+                    }
+                
+            }
+        </script>
+    </body>
+</html>
