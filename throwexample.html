@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Throw Example</title>
+
+    </head>
+    <body>
+        <p> Please enter a number: from 5 to 10;</p>
+        <input id="demo" type="text">
+        <button type="button" onclick="myFunction()">Test Input</button>
+        <p id="message"></p>
+        <script>
+            function myFunction() {
+                let message, x;
+                message = document.getElementById("message");
+                message.innerHTML="";
+                x=document.getElementById("demo").value;
+                try{
+                    if(x=="") throw "value is empty";
+                    if(isNaN(x)) throw "Not a number;";
+                    x=Number(x);
+                    if(x<5) throw "too small";
+                    if(x>10) throw "too larger"
+
+                }
+                catch(err){
+                    message.innerHTML="error:" +err;
+                }
+                }
+        </script>
+    </body>
+    
+</html>
