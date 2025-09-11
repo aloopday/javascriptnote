@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Use strict getter method</title>
+    </head>
+    <body>
+        <h1> Use strict</h1>
+        <h3>Press F12 to debug</h3>
+        <p>Don't allow to assign value to getter method read property.</p>
+        <script>
+            "use strict";
+            var obj={getter x(){return 0}};
+            obj.x=3.14;   // report error.
+        </script>
+    </body>
+</html>
