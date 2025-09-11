@@ -27,3 +27,13 @@ JavaScript 调试工具
 浏览器启用调试工具一般是按下 F12 键，并在调试菜单中选择 "Console" 。
 
 ## JavaScript install vaiable can not hoist.
+
+##  write your declare in the head of program.
+在头部声明你的变量
+对于大多数程序员来说并不知道 JavaScript 声明提升。
+
+如果程序员不能很好的理解声明提升，他们写的程序就容易出现一些问题。
+
+## JavaScript 严格模式(use strict)
+
+[JavaScript 严格模式](https://www.runoob.com/js/js-strict.html)
