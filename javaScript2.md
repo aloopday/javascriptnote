@@ -25,3 +25,5 @@ JavaScript 调试工具
 有了调试工具，我们就可以设置断点 (代码停止执行的位置), 且可以在代码执行时检测变量。
 
 浏览器启用调试工具一般是按下 F12 键，并在调试菜单中选择 "Console" 。
+
+## JavaScript install vaiable can not hoist.

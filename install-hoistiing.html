@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Install Hoisting</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            var x; //declare x;
+            x=5; // variable x is assigned a value of 5;
+            elem =document.getElementById("demo");// get the element with id "demo";
+            elem.innerHTML= "X is: " + x +",y is :" +y;
+            var y=10; //declare y;
+
+        </script>
+    </body>
+</html>
