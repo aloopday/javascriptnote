@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Internal function strict user.</title>
+    </head>
+    <body>
+
+        <p>In the function to use "Use strict" will report error in the Function</p>
+        <p>Press F12 to see the error message.</p>
+        <script>
+            x=3.14; // will not cause an error.
+            myFunction();
+            function myFunction(){
+                "use strict";
+                y =3.14; //This will cause an error because y is not declared.
+            }
+        </script>
+    </body>
+</html>
