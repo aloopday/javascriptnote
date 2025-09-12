@@ -45,3 +45,9 @@ JavaScript 调试工具
 ## use javascript misunderstand
 
 [misconception](https://www.runoob.com/js/js-mistakes.html)
+## JavaScript 使用误区
+[JavaScript 使用误区](https://www.runoob.com/js/js-mistakes.html)
+
+在 JavaScript 程序中如果你在 if 条件语句中使用赋值运算符的等号 (=) 将会产生一个错误结果, 正确的方法是使用比较运算符的两个等号 (==)
+
+在 JavaScript 程序中如果你在 if 条件语句中使用assignment |赋值运算符的等号（=）将会产生一个错误结果，正确的方法是使用比较运算符的两个等号（==）
