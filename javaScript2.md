@@ -37,3 +37,7 @@ JavaScript 调试工具
 ## JavaScript 严格模式(use strict)
 
 [JavaScript 严格模式](https://www.runoob.com/js/js-strict.html)
+
+## strict model 
+
+[strict](https://www.runoob.com/js/js-strict.html)

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Don't allow the use strict</title>
+    </head>
+    <body>
+        <h1>Use strict</h1>
+
+        <h3>
+            Don't allow to use this sentence.
+        </h3>
+        <p>Press F12 to open debug </p>
+        <script>
+            "use strict"
+
+            with (Math){x=cos(2)}; // error;
+        </script>
+    </body>
+</html>
