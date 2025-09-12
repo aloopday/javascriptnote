@@ -41,3 +41,7 @@ JavaScript 调试工具
 ## strict model 
 
 [strict](https://www.runoob.com/js/js-strict.html)
+
+## use javascript misunderstand
+
+[misconception](https://www.runoob.com/js/js-mistakes.html)
