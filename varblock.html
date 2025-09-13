@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Block var</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p><b>Notice:</b>There is a variable declaration using var inside a block. There just is a brace. So you can 
+        visit the variable outside the block.
+    However ,if there is a function .you can access the variable from outside of the function.</p>
+        <script>
+            var x=10;
+            // output x =10;
+            {
+                var x=2;
+                //output x=2;
+            }
+
+            //output x=2  notice the change
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>

@@ -158,3 +158,36 @@ This can not use as variable name and function name.
 ## JavaScript let and const 
 
 [javascript let & const](https://www.runoob.com/js/js-let-const.html)
+
+ES2015(ES6) 新增加了两个重要的 JavaScript 关键字: let 和 const。
+
+let 声明的变量只在 let 命令所在的代码块内有效。
+
+const 声明一个只读的常量，一旦声明，常量的值就不能改变。
+
+在 ES6 之前，JavaScript 只有两种作用域： 全局变量 与 函数内的局部变量。
+
+
+let 声明的变量只在let 命令所在的代码块内有效。
+const 声明一个只读的常量，一旦声明，常量的值就不能改变。
+在ES6之前，JavaScript只有两种作用域：全局变量与函数内的局部变量。
+
+JavaScript 块级作用域(Block Scope)
+使用 var 关键字声明的变量不具备块级作用域的特性，它在 {} 外依然能被访问到。
+```
+{ 
+    var x = 2; 
+}
+```
+// 这里可以使用 x 变量
+在 ES6 之前，是没有块级作用域的概念的。
+
+ES6 可以使用 let 关键字来实现块级作用域。
+
+let 声明的变量只在 let 命令所在的代码块 {} 内有效，在 {} 之外不能访问。
+```
+{ 
+    let x = 2;
+}
+```
+// 这里不能使用 x 变量
