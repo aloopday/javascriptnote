@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This object</title>
+        </head>
+        <body>
+            <h2>JavaScript <b>this</b> KeyWord</h2>
+
+            <p>In instance of, <b>this</b> direct <b>person</b> object.</p>
+            <p>Because,person object have the fullName method.</p>
+            <p id="demo"></p>
+            <script>
+                //create an object:
+                let person={
+                    fistName:"Charles",
+                    lastName:"Wang",
+                    id :     1986,
+                    fullName: function(){
+                        return this.firstName + " "+this.lastName;
+                    }
+                };
+                //display the data of person object:
+                document.gerElementById("demo").innerHTML=person.fullName();
+            </script>
+        </body>
+</html>
