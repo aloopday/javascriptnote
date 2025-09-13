@@ -149,3 +149,12 @@ This can not use as variable name and function name.
 [reserved keyword](https://www.runoob.com/js/js-reserved.html)
 ## JavaScript  This key word
 [JavaScript this 关键字](https://www.runoob.com/js/js-this.html)
+
+显式函数绑定
+在 JavaScript 中函数也是对象，对象则有方法，apply 和 call 就是函数对象的方法。这两个方法异常强大，他们允许切换函数执行的上下文环境（context），即 this 绑定的对象。
+
+在下面实例中，当我们使用 person2 作为参数来调用 person1.fullName 方法时, this 将指向 person2, 即便它是 person1
+
+## JavaScript let and const 
+
+[javascript let & const](https://www.runoob.com/js/js-let-const.html)

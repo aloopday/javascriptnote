@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>This object</title>
+    </head>
+    <body>
+        <h2>JavaScript this key word.</h2>
+        <p>In this example, the <strong>this</strong> direct person2. Even the method include person 1.</p>
+        <p id="demo"></p>
+        <script>
+            let person1={
+                fullName: function(){
+                    return this.firstName +" " +this.lastName;
+                }
+            }
+
+            let person2={
+                firstName:"Charles",
+                lastName:"Wong",
+            }
+
+            let x =person1.fullName.call(person2);
+            document.getElementById("demo").innerHTML=x;
+
+
+        </script>
+    </body>
+</html>
