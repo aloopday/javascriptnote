@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title> var object.window</title>
+    </head>
+    <body>
+        <p>JavaScript global Scope</p>
+        <p> Use keyword var to declare global variable , this scope belong  window.</p>
+        <p id="demo"></p>
+        <p id="demo2"></p>
+        <script>
+            var carName="BMW";
+            // we can use window.carName to access the variable;
+            document.getElementById("demo").innerHTML= window.carName;
+
+            let carName2="XiaoMi";
+            document.getElementById("demo2").innerHTML= "I can display "+ window.carName2
+        </script>
+    </body>
+</html>
