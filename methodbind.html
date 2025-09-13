@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>This object</title>
+    </head>
+    <body>
+        <h2>JavaScript <b>this</b>keyword</h2>
+        <p>In this instance, <b>this </b> direct the object of method</p>
+        <p id="demo"></p>
+        <script>
+            // create an object
+            let person={
+                firstName:"Charles",
+                lastName:"Wong",
+                id: 1986,
+                myFunction: function(){
+                    return this;
+                }
+
+            };
+
+            document.getElementById("demo").innerHTML=person.myFunction();
+        </script>
+    </body>
+</html>
