@@ -131,3 +131,7 @@ websites = {site:"菜鸟教程", url:"www.runoob.com", like:460}
 数据准确性：确保用户输入的数据符合预期格式，避免无效数据。
 ***安全性：防止恶意用户提交有害数据，如 SQL 注入、跨站脚本攻击（XSS）等。***
 用户体验：及时反馈用户输入错误，帮助用户快速纠正问题。
+
+## JavaScript API 验证：
+
+[JavaScript 验证 API](https://www.runoob.com/js/js-validation-api.html)
