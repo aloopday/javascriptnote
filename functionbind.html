@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>object.fullname</title>
+    </head>
+    <body>
+        <h2>Javascript <b>this </b> key word</h2>
+       <p>In this instance, <strong>this </strong>direct <b>person</b>object</p>
+       <p>Because ,object person is the owner of the fullName.</p>
+       <p id="demo"></p>
+       <script>
+        // create an object
+        const person ={
+            firstName: "John",
+            lastName:"Wang",
+            age:39,
+            id: 1986,
+            fullName: function(){
+                return this.firstName + " "+this.lastName;
+            }
+        };
+
+        document.getElementById("demo").innerHTML=person.fullName();
+
+
+       </script>
+    </body>
+</html>
