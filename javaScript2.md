@@ -121,3 +121,6 @@ websites = {site:"菜鸟教程", url:"www.runoob.com", like:460}
 
 以下代码的的变量 i 返回 10，而不是 undefined：
 
+## javaScript form.
+[javaScript](https://www.runoob.com/js/js-validation.html);
+
