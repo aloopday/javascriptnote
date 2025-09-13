@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript Form Validation</title>
+    </head>
+    <body>
+        <h1>JavaScript Form Validation</h1>
+        <p> Please fill out the form </p>
+        <input id="numb">
+        <button type="button" onclick="myFunction()">Submit</button>
+        <script>
+            function myFunction(){
+                let x, text;
+                // get id="numb" value;
+                x= document.getElementById("numb").value;
+                //if input the value of x is not a number or less than 1 or greater than 10,
+                if(isNaN(x)||x<1||x>19){
+                    text="Input not valid";
+                }else{
+                    text="Input right."
+                }
+                document.getElementById("numb").value=text;
+            }
+        </script>
+    </body>
+</html>

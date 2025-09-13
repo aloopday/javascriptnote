@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Assignment Validation</title>
+        <script>
+            function validateForm(){
+                let x =document.forms["myForm"]["email"].value;
+                let atpos=x.indexOf("@");
+                let dotpos=x.lastIndexOf(".");
+                if(atpos<1||dotpos<atpos+2||dotpos+2>=x.length){
+                    alert("This is not a valid e-mail address");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+
+        <form name="myForm" action="demo-form.php" onsubmit="return validateForm()">
+            Email:<input type="text" name="email">
+            <input type="submit" value="submit">
+
+        </form>
+
+    </body>
+</html>

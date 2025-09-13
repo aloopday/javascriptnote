@@ -124,3 +124,10 @@ websites = {site:"菜鸟教程", url:"www.runoob.com", like:460}
 ## javaScript form.
 [javaScript](https://www.runoob.com/js/js-validation.html);
 
+## javascript form validate
+[JavaScript 表单验证](https://www.runoob.com/js/js-form-validation.html)
+
+为什么需要表单验证？
+数据准确性：确保用户输入的数据符合预期格式，避免无效数据。
+***安全性：防止恶意用户提交有害数据，如 SQL 注入、跨站脚本攻击（XSS）等。***
+用户体验：及时反馈用户输入错误，帮助用户快速纠正问题。
