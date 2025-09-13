@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>JavaScript Array</title>
+    </head>
+    <body>
+        <p>Just use number to check the array in javaScript</p>
+    </body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p>If you use name as index, when visit array , the javascript will define the array again.
+        The method and attribute will not used, otherwise ,i will generate a error.
+        
+    </p>
+    <script>
+        let person=[];
+        person[0]="Charles";
+        person[1]="Wang";
+        person[2]=23;
+        document.getElementById("demo").innerHTML=person[0]+ " " + person[1]+ " " + person[2];
+
+        let cars=[];
+        cars["name"]="BMW";
+        cars["name2"]="Audi";
+        cars["name3"]="Ford";
+        document.getElementById("demo1").innerHTML=cars[0]+" "+cars.length;
+    </script>
+</html>

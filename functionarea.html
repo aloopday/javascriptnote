@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Program block scope</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            for(var i=0; i<8;i++){
+                // some code
+            }
+
+            document.getElementById("demo").innerHTML= i;
+        </script>
+
+    </body>
+</html>

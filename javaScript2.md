@@ -57,3 +57,67 @@ JavaScript 调试工具
 The JavaScript will be end of the sentence.
 
 
+为什么会有这样的结果呢？因为在 JavaScript 中，实例 4 的代码与下面的代码一致：
+```
+function myFunction(a) {
+    var
+    power = 10;  
+    return;       // 分号结束，返回 undefined
+    a * power;
+}
+```
+解析
+如果是一个不完整的语句，如下所示:
+```
+var
+JavaScript 将尝试读取第二行的语句：
+
+power = 10;
+```
+但是由于这样的语句是完整的:
+```
+return
+```
+JavaScript 将自动关闭语句:
+
+return;
+在 JavaScript 中，分号是可选的 。
+
+由于 return 是一个完整的语句，所以 JavaScript 将关闭 return 语句。
+
+Note	注意：不用对 return 语句进行断行。
+
+## define array.
+定义数组元素，最后不能添加逗号
+数组最后一个值的后面添加逗号虽然语法没有问题，但是在不同的浏览器可能得到不同的结果。
+```
+var colors = [5, 6, 7,]; //这样数组的长度可能为3 也可能为4。
+```
+正确的定义方式：
+```
+points = [40, 100, 1, 5, 25, 10];
+```
+定义对象，最后不能添加逗号
+错误的定义方式：
+```
+websites = {site:"菜鸟教程", url:"www.runoob.com", like:460,}
+正确的定义方式：
+```
+```
+websites = {site:"菜鸟教程", url:"www.runoob.com", like:460}
+```
+
+## Undefined 不是 Null
+在 JavaScript 中, null 用于对象, undefined 用于变量，属性和方法。
+
+对象只有被定义才有可能为 null，否则为 undefined。
+
+如果我们想测试对象是否存在，在对象还没定义时将会抛出一个错误。
+
+错误的使用方式：
+
+## 程序块作用域
+在每个代码块中 JavaScript 不会创建一个新的作用域，一般各个代码块的作用域都是全局的。
+
+以下代码的的变量 i 返回 10，而不是 undefined：
+
