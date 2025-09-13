@@ -135,3 +135,15 @@ websites = {site:"菜鸟教程", url:"www.runoob.com", like:460}
 ## JavaScript API 验证：
 
 [JavaScript 验证 API](https://www.runoob.com/js/js-validation-api.html)
+
+## JavaScript keep the keyword
+
+[keep the keyword](https://www.runoob.com/js/js-reserved.html)
+
+JavaScript 保留关键字
+In JavaScript, some identifier  keep key word.
+This can not use as variable name and function name.
+
+
+##  JavaScript reserved keyword
+[reserved keyword](https://www.runoob.com/js/js-reserved.html)
