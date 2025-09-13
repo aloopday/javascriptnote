@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Range Underflow</title>
+    </head>
+    <body>
+        <p>Input number and press the button</p>
+        <input id="id1" type="number" min="100" required>
+        <button onclick="myFunction()">Try it</button>
+        <p>If the number is less than 100, will display the wrong message.</p>
+
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let txt="";
+                let inpObj=document.getElementById("id1");
+                if(!isNumeric(inpObj.value)){
+                    txt="Input not a number";
+
+                }else if(inpObj.validity.rangeUnderflow){
+                    txt="Input too small";
+                }else{
+                    txt="Input ok";
+                }
+                document.getElementById("demo").innerHTML=txt;
+            }
+            //to judge if the input is a number 
+            function isNumeric(n){
+                return !isNaN(parseFloat(n))&&isFinite(n);
+            }
+        </script>
+
+
+
+
+
+
+        </body>
+</html>
