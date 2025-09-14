@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Call function()</title>
+    </head>
+    <body>
+        <p> After three seconds to execute</p>
+        <p id="demo"></p>
+        <script>
+            function print(){
+                document.getElementById("demo").innerHTML="Hello Charles"
+            }
+            setTimeout(print,3000);
+        </script>
+    </body>
+</html>
