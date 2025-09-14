@@ -397,3 +397,7 @@ functionName(parameter1, parameter2, parameter3) {
 函数显式参数在函数定义时列出。
 
 函数隐式参数在函数调用时传递给函数真正的值。
+## ES6 函数可以自带参数
+ES6 支持函数带有默认参数，就判断 undefined 和 || 的操作：
+
+
