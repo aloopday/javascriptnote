@@ -309,4 +309,40 @@ let text = '{ "sites" : [' +
 javascript:void(0) 含义
 [javaScript void](https://www.runoob.com/js/js-void.html)
 
-## 
+##  javaFunction
+[javafunction](https://www.runoob.com/js/js-function-definition.html)
+
+Due to the function is not a execution sentence .so don't ues  as the end semicolon
+
+函数存储在变量中，不需要函数名称，通常通过变量名来调用。
+
+Note	上述函数以分号结尾，因为它是一个执行语句。
+
+## 函数提升（Hoisting）
+
+在之前的教程中我们已经了解了 "hoisting(提升)"。
+
+提升（Hoisting）是 JavaScript 默认将当前作用域提升到前面去的行为。
+
+提升（Hoisting）应用在变量的声明与函数的声明。
+
+因此，函数可以在声明之前调用：
+
+myFunction(5);
+
+function myFunction(y) {
+    return y * y;
+}
+使用表达式定义函数时无法提升。
+
+自调用函数
+函数表达式可以 "自调用"。
+
+自调用表达式会自动调用。
+
+如果表达式后面紧跟 () ，则会自动调用。
+
+不能自调用声明的函数。
+
+通过添加括号，来说明它是一个函数表达式：
+

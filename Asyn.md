@@ -34,3 +34,161 @@ doAsyncTask(function(result) {
 [ajax](https://www.runoob.com/ajax/ajax-tutorial.html)
 
 XMLHttpRequest 的 onload 和 onerror 属性都是函数，分别在它请求成功和请求失败时被调用。如果你使用完整的 jQuery 库，也可以更加优雅的使用异步 AJAX：
+
+## JavaScript  promise
+[javascript promise](https://www.runoob.com/js/js-promise.html)
+
+![alt text](image-1.png)
+
+Promise 是 JavaScript 中用于处理异步操作的对象，它代表一个异步操作的最终完成（或失败）及其结果值。
+```
+const myPromise = new Promise((resolve, reject) => {
+  // 异步操作代码
+  
+  if (/* 操作成功 */) {
+    resolve('成功的结果'); // 将 Promise 状态改为 fulfilled
+  } else {
+    reject('失败的原因'); // 将 Promise 状态改为 rejected
+  }
+});
+```
+
+## JavaScript async/await
+[JavaScript async/await](https://www.runoob.com/js/js-async-await.html)
+
+JavaScript 是单线程语言，意味着它一次只能执行一个任务。为了避免长时间运行的任务阻塞主线程，JavaScript 使用异步编程模型。
+
+![alt text](image-2.png)
+
+
+## Callback Hell
+[Callback hell](https://www.runoob.com/js/js-async-await.html)
+Callback Hell
+
+```
+getData(function(a) {
+  getMoreData(a, function(b) {
+    getMoreData(b, function(c) {
+      getMoreData(c, function(d) {
+        console.log(d);
+      });
+    });
+  });
+});
+```
+
+Promise 的引入
+ES6 引入了 Promise 对象来解决回调地狱问题。
+
+实例
+```
+function getData() {
+  return new Promise((resolve, reject) => {
+    // 异步操作
+    setTimeout(() => resolve('数据'), 1000);
+  });
+}
+
+getData()
+  .then(data => {
+    console.log(data);
+    return getMoreData(data);
+  })
+  .then(moreData => {
+    console.log(moreData);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+  ```
+虽然 Promise 改善了回调问题，但 then() 链式调用仍然不够直观。
+![alt text](image-3.png)
+
+
+
+## javaScript standard 
+[javaScript standard](https://www.runoob.com/js/js-conventions.html)
+
+##
+The name variable use the 驼峰法来命名。（camelCase):
+空格与运算符
+通常运算符 ( = + - * / ) 前后需要添加空格:
+```
+var x = y + z;var values = ["Volvo", "Saab", 
+ "Fiat"];
+ ```
+ 代码缩进
+通常使用 4 个空格符号来缩进代码块：
+
+语句规则
+简单语句的通用规则:
+
+一条语句通常以分号作为结束符。
+实例:
+var values = ["Volvo", "Saab", "Fiat"];
+
+var person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 50,
+    eyeColor: "blue"
+};
+复杂语句的通用规则:
+
+将左花括号放在第一行的结尾。
+左花括号前添加一空格。
+将右花括号独立放在一行。
+以分号结束一个复杂的声明。
+
+
+## Function()
+```
+function toCelsius(fahrenheit) {
+    return (5 / 9) * (fahrenheit - 32);
+}
+
+```
+## loop
+```
+for (i = 0; i < 5; i++) {    x += i;}
+```
+
+# #if sentence
+```
+if (time < 20) {    greeting = "Good day";} else {    
+ greeting = "Good evening";}
+
+ ```
+ ## object
+ 
+```
+var person = {    firstName: "John",    
+ lastName: "Doe",    age: 50,    eyeColor: 
+ "blue"};
+
+ ```
+ ## short object
+ ```
+ var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+ ```
+ 	- 通常在 JavaScript 中被认为是减法，所以不允许使用。
+
+  ## capital world.
+  使用小写文件名
+大多 Web 服务器 (Apache, Unix) 对大小写敏感： london.jpg 不能通过 London.jpg 访问。
+
+其他 Web 服务器 (Microsoft, IIS) 对大小写不敏感： london.jpg 可以通过 London.jpg 或 london.jpg 访问。
+
+你必须保持统一的风格，我们建议统一使用小写的文件名。
+## function definition 
+
+[JavaScript 函数定义](https://www.runoob.com/js/js-function-definition.html)
+
+```
+function functionName(parameters) {
+  执行的代码
+}
+
+```

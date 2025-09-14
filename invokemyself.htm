@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> function expression () invoke by them self</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+
+
+        <script>
+          ( function (a,b){
+                document.getElementById("demo").innerHTML="I will invoke my self"
+            })();
+        </script>
+    </body>
+</html>
