@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>JSON parse</title>
+    </head>
+    <body>
+        <h2>Create the Object of JSON</h2>
+        <p id="demo"></p>
+        <script>
+            let text = '{ "sites" : [' +'{ "name":"Runoob" , "url":"www.runoob.com" },' +'{ "name":"Google" , "url":"www.google.com" },' +
+	'{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+
+    obj=JSON.parse(text);
+    document.getElementById("demo").innerHTML=obj.sites[1].name+" "+obj.sites[1].url;
+
+        </script>
+    </body>
+</html>

@@ -239,3 +239,74 @@ const 的本质: const 定义的变量并非常量，并非不可变，它定义
 
 
 const define a value of variable.When we use const define object and array ,the value can changed. 
+
+##  const 
+const 关键字定义的变量则不可以在使用后声明，也就是变量需要先声明再使用。
+
+[const](https://www.runoob.com/js/js-let-const.html)
+
+## JavaScript JSON
+[JavaScript JSON](https://www.runoob.com/js/js-json.html)
+
+
+什么是 JSON?
+JSON 英文全称 JavaScript Object Notation
+JSON 是一种轻量级的数据交换格式。
+JSON是独立的语言 *
+JSON 易于理解。
+```
+{
+  "name": "Tom",
+  "age": 18,
+  "isStudent": true,
+  "scores": [90, 85, 88]
+  用途：
+
+```
+在 Web 应用中传递数据
+与服务器通信（如 AJAX、REST API）
+注意：
+
+JSON 的键必须用双引号包裹
+JSON 只能表示数据，不能包含函数或特殊对象（如 Date）
+
+}
+	* JSON 使用 JavaScript 语法，但是 JSON 格式仅仅是一个文本。
+文本可以被任何编程语言读取及作为数据格式传递。
+
+
+Json is a text and can be read by any program language.
+
+JSON 语法规则
+数据为 键/值 对。
+数据由逗号分隔。
+大括号保存对象
+方括号保存数组
+
+JSON Object store  bracket
+
+can store multiple key/value
+{"name":"Google","url":"www.google.com"}
+
+square bracket []
+In javaScript ,array can include object:
+
+"sites":[
+    {"name":"google" ,"url":"www.google.com"},
+    {"name":"Google","url":"www.google.com"},
+    {"name":"Tao bao","url":"www.baidu.com"}
+]
+
+```
+let text = '{ "sites" : [' +
+    '{ "name":"Runoob" , "url":"www.runoob.com" },' +
+    '{ "name":"Google" , "url":"www.google.com" },' +
+    '{ "name":"Taobao" , "url":"www.taobao.com" } ]}';
+ ```
+
+
+##  JavaScript 
+javascript:void(0) 含义
+[javaScript void](https://www.runoob.com/js/js-void.html)
+
+## 
