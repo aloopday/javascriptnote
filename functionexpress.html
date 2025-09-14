@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> myFunction() expression </title>
+
+    </head>
+    <body>
+        <p>function as a expression</p>
+        <p id="demo"></p>
+        
+        <script>
+            function myFunction(a,b){
+                return a*b;
+            }
+
+            let x = myFunction(3,5)*2;
+            document.getElementById("demo").innerHTML=x;
+            
+        </script>
+    </body>
+</html>
