@@ -383,3 +383,17 @@ ES6 新增了箭头函数。
 
 () => {函数声明}
 ```
+
+
+## JavaScript Explicit Parameters   and implicit parameters
+
+函数显式参数(Parameters)与隐式参数(Arguments)
+```
+functionName(parameter1, parameter2, parameter3) {
+    // 要执行的代码……
+}
+
+```
+函数显式参数在函数定义时列出。
+
+函数隐式参数在函数调用时传递给函数真正的值。

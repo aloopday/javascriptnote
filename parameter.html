@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Para</title>
+    </head>
+    <body>
+        <p>Set default value of function</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction(x,y){
+                if (y===undefined){ 
+                y=0;
+                }      
+                return x *y;     
+             }
+             document.getElementById("demo").innerHTML=myFunction(4 );
+        </script>
+    </body>
+</html>
