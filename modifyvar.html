@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Modify Variable value</title>
+    </head>
+    <body>
+        <h2> Assign new value to  var Variable</h2>
+        <p>let 关键字在不同作用域，或不同块级作用域中是可以重新声明赋值的:</p>
+        <p id="demo"></p>
+        <script>
+            var x=2;
+            // x is 2
+            var x=5;
+            // Right now x is 5
+            document.getElementById("demo").innerHTML=x;
+        </script>
+    </body>
+</html>

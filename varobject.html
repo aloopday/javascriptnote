@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <body>
+        <h2>JavaScript const</h2>
+        <p> const define variable that can be assigned only once.
+            It call the value of the variable constant. Use Const define
+            array and object is not immutable.
+        </p>
+        <p id="demo"></p>
+        <script>
+            // create a constant variable
+
+            const car ={type:"Toyota",model:"camry",color:"black"};
+            
+            // modify a property of the object
+            car.color="read";
+            //add some property 
+
+            car.owner="charles";
+
+            // display some property of the object
+            document.getElementById("demo").innerHTML=car.owner+" " +car.color;
+
+
+        </script>
+    </body>
+
+
+    </html>

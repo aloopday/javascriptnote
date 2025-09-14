@@ -208,3 +208,34 @@ var x = 2;       // 全局作用域
 let x = 2;       // 全局作用域
 
 ```
+
+const定义常量与使用let 定义的变量相似：
+
+二者都是块级作用域
+都不能和它所在作用域内的其他变量或函数拥有相同的名称
+两者还有以下两点区别：
+
+const声明的常量必须初始化，而let声明的变量不用
+const 定义常量的值不能通过再赋值修改，也不能再次声明。而 let 定义的变量值可以修改。
+```var x = 10;
+// 这里输出 x 为 10
+{ 
+    const x = 2;
+    // 这里输出 x 为 2
+}
+// 这里输出 x 为 10
+const 声明的常量必须初始化：
+
+// 错误写法
+const PI;
+PI = 3.14159265359;
+
+// 正确写法
+const PI = 3.14159265359;
+```
+
+并非真正的常量
+const 的本质: const 定义的变量并非常量，并非不可变，它定义了一个常量引用一个值。使用 const 定义的对象或者数组，其实是可变的。下面的代码并不会报错：
+
+
+const define a value of variable.When we use const define object and array ,the value can changed. 
