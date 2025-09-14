@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="utf-8">
+        <meta name="vieport"  content="width=device-width initial-scale=1.0">
+        <title>argument Max</title>
+    </head>
+    <body>
+        <p>find the max</p>
+        <p id="demo"></p>
+        <script>
+            x=findMax(1,123,500,115,44,88);
+
+            function findMax(){
+                let i, max =arguments[0];
+
+                if(arguments.length <2) return max;
+                for(i=0 ;i<arguments.length;i++){
+
+                    if (arguments[i]>max){
+                        max =arguments[i];
+                    }
+                }
+                return max;
+            }
+           document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>

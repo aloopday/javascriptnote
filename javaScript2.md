@@ -400,4 +400,10 @@ functionName(parameter1, parameter2, parameter3) {
 ## ES6 函数可以自带参数
 ES6 支持函数带有默认参数，就判断 undefined 和 || 的操作：
 
+## arguments 对象
+JavaScript 函数有个内置的对象 arguments 对象。
+
+arguments 对象包含了函数调用的参数数组。
+
+通过这种方式你可以很方便的找到最大的一个参数的值
 
