@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Call back function</title>
+    </head>
+    <body>
+        <p>The callback function waiting 3 seconds to execute</p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <script>
+            setTimeout(function(){
+                document.getElementById("demo1").innerHTML="Hello Charles";// after 3 seconds to execute
+            }, 3000);
+            document.getElementById("demo2").innerHTML="Hello Hong Kong "// execute first
+        </script>
+    </body>
+</html>

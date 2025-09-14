@@ -29,3 +29,8 @@ doAsyncTask(function(result) {
 });
 
 ```
+
+## AjAX 
+[ajax](https://www.runoob.com/ajax/ajax-tutorial.html)
+
+XMLHttpRequest 的 onload 和 onerror 属性都是函数，分别在它请求成功和请求失败时被调用。如果你使用完整的 jQuery 库，也可以更加优雅的使用异步 AJAX：

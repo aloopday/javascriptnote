@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>AJAX </title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("button").click(function(){
+					$.get("/try/ajax/demo_test.php",function(data,status){
+						alert("data: " + data +"\n state: " + status);
+					});
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+ <button> set one http Get request ot get the result.</button>
+
+	</body>
+</html>
