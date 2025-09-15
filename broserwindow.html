@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Object window</title>
+    </head>
+    <body>
+        <p>In html the value of  <b>this</b>,in global function is a window object</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                return this;
+            }
+            document.getElementById("demo").innerHTML=myFunction();
+        </script>
+    </body>
+</html>

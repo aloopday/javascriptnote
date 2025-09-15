@@ -407,3 +407,5 @@ arguments 对象包含了函数调用的参数数组。
 
 通过这种方式你可以很方便的找到最大的一个参数的值
 
+## Global Object
+[Global Object](https://www.runoob.com/js/js-function-invocation.html)
