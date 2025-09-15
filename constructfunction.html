@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>construct function</title>
+    </head>
+    <body>
+        <p>In this instance, myFunction is function  construct function.</p>
+        <p id="demo"></p>
+        <script>
+            function myFunction(arg1, arg2){
+                this.firstName=arg1;
+                this.lastName=arg2;
+            }
+            let x = new myFunction("Charels","Wang")
+            document.getElementById("demo").innerHTML =x.firstName;
+        </script>
+    </body>
+</html>
