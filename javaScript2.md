@@ -409,3 +409,63 @@ arguments 对象包含了函数调用的参数数组。
 
 ## Global Object
 [Global Object](https://www.runoob.com/js/js-function-invocation.html)
+
+## 
+***函数作为全局对象调用，会使 this 的值成为全局对象。***
+使用 window 对象作为一个变量容易造成程序崩溃。
+
+### JavaScript 中对象的方法（Method）和函数（Function）的区别
+
+在 JavaScript 中，**函数（Function）** 和 **对象的方法（Method）** 都是可调用的代码块，但它们在定义、访问和行为上存在关键区别。简单来说：
+- **函数** 是独立的、可重用的代码单元，可以单独定义和调用。
+- **方法** 是函数的“特殊形式”，它被绑定到对象上，作为对象的属性存在，主要用于描述对象的行为。
+
+#### 主要区别
+以下是它们的核心差异，我用表格总结以便比较：
+
+| 方面          | 函数 (Function)                          | 方法 (Method)                              |
+|---------------|------------------------------------------|--------------------------------------------|
+| **定义方式** | 独立定义，使用 `function` 关键字或箭头函数（如 `function add(a, b) { return a + b; }`）。 | 函数作为对象的属性定义（如 `obj.method = function() { ... };`）。 |
+| **访问方式** | 直接调用（如 `add(1, 2)`），或通过变量（如 `const fn = add; fn(1, 2)`）。 | 通过对象调用（如 `obj.method()`），类似于 `obj.method.call(obj)`。 |
+| **this 关键字** | `this` 的值取决于调用上下文（全局调用时通常为 `window` 或 `undefined`，箭头函数继承外层 `this`）。 | `this` 默认指向调用该方法的对象（除非使用箭头函数或显式绑定）。 |
+| **作用域**    | 全局或模块作用域，可在任何地方调用。     | 绑定到对象，访问对象内部的属性（如 `this.property`）。 |
+| **示例场景** | 通用工具函数，如计算或验证。             | 对象行为，如数组的 `push()` 方法操作自身。 |
+
+#### 详细解释
+1. **函数的独立性**：
+   - 函数可以脱离任何对象存在。它是一个一等公民（first-class citizen），可以像变量一样赋值、传递或返回。
+   - 示例：
+     ```javascript
+     function greet(name) {
+       return `Hello, ${name}!`;
+     }
+     console.log(greet('World'));  // 输出: Hello, World!
+     ```
+
+2. **方法的绑定性**：
+   - 方法必须是对象的一个属性。当你调用它时，JavaScript 会自动将 `this` 绑定到该对象。这使得方法能轻松访问对象的其他属性或方法。
+   - 示例：
+     ```javascript
+     const person = {
+       name: 'Alice',
+       greet: function() {  // 这是一个方法
+         return `Hello, ${this.name}!`;  // this 指向 person 对象
+       }
+     };
+     console.log(person.greet());  // 输出: Hello, Alice!
+     ```
+   - 如果你将方法提取出来作为普通函数调用，`this` 就会丢失：
+     ```javascript
+     const extracted = person.greet;
+     console.log(extracted());  // 输出: Hello, undefined!（严格模式下为错误）
+     ```
+
+3. **箭头函数的特殊情况**：
+   - 如果方法使用箭头函数定义（如 `greet: () => { ... }`），则 `this` 不会绑定到对象，而是继承外层作用域。这在某些场景（如事件处理）有用，但会改变方法的“绑定”行为。
+
+#### 实际应用建议
+- 用**函数** 处理不依赖对象的逻辑（如数学计算）。
+- 用**方法** 封装对象的操作（如 DOM 元素的 `addEventListener` 方法）。
+- 记住：所有方法本质上都是函数，但不是所有函数都是方法。
+
+如果需要更多代码示例或特定场景的演示，请提供细节！
