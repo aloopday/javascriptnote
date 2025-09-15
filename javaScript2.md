@@ -407,3 +407,36 @@ arguments 对象包含了函数调用的参数数组。
 
 通过这种方式你可以很方便的找到最大的一个参数的值
 
+## 通过值传递参数
+
+通过值传递参数
+在函数中调用的参数是函数的隐式参数。
+
+JavaScript 隐式参数通过值来传递：函数仅仅只是获取值。
+
+如果函数修改参数的值，不会修改显式参数的初始值（在函数外定义）。
+
+隐式参数的改变在函数外是不可见的。
+
+通过对象传递参数
+在JavaScript中，可以引用对象的值。
+
+因此我们在函数内部修改对象的属性就会修改其初始的值。
+
+修改对象属性可作用于函数外部（全局变量）。
+
+修改对象属性在函数外是可见的。
+
+## JavaScript Invocation
+[JavaScript INvocation](https://www.w3schools.com/js/js_function_invocation.asp)
+JavaScript 函数有 4 种调用方式。
+
+每种方式的不同在于 this 的初始化。
+
+This keywords
+Normally, in javascript ,this represent  the current function.
+
+调用 JavaScript 函数
+在之前的章节中我们已经学会了如何创建函数。
+
+函数中的代码在函数被调用后执行。
