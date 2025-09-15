@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=devivce-width initial-scale=1.0">
+        <title>The global Scople</title>
+    </head>
+    <body>
+        <p>The global counter</p>
+        <button type="button" onclick="myFunction()">counter</button>
+        <p id="demo"></p>
+        <script>
+            let counter =0;
+            function add(){
+                return counter +=1;
+            }
+            function myFunction(){
+                document.getElementById("demo").innerHTML =add();
+            }
+        </script>
+    </body>
+</html>

@@ -407,6 +407,7 @@ arguments 对象包含了函数调用的参数数组。
 
 通过这种方式你可以很方便的找到最大的一个参数的值
 
+<<<<<<< HEAD
 ## 通过值传递参数
 
 通过值传递参数
@@ -440,3 +441,103 @@ Normally, in javascript ,this represent  the current function.
 在之前的章节中我们已经学会了如何创建函数。
 
 函数中的代码在函数被调用后执行。
+=======
+## Global Object
+[Global Object](https://www.runoob.com/js/js-function-invocation.html)
+
+## 
+***函数作为全局对象调用，会使 this 的值成为全局对象。***
+使用 window 对象作为一个变量容易造成程序崩溃。
+
+### JavaScript 中对象的方法（Method）和函数（Function）的区别
+
+在 JavaScript 中，**函数（Function）** 和 **对象的方法（Method）** 都是可调用的代码块，但它们在定义、访问和行为上存在关键区别。简单来说：
+- **函数** 是独立的、可重用的代码单元，可以单独定义和调用。
+- **方法** 是函数的“特殊形式”，它被绑定到对象上，作为对象的属性存在，主要用于描述对象的行为。
+
+#### 主要区别
+以下是它们的核心差异，我用表格总结以便比较：
+
+| 方面          | 函数 (Function)                          | 方法 (Method)                              |
+|---------------|------------------------------------------|--------------------------------------------|
+| **定义方式** | 独立定义，使用 `function` 关键字或箭头函数（如 `function add(a, b) { return a + b; }`）。 | 函数作为对象的属性定义（如 `obj.method = function() { ... };`）。 |
+| **访问方式** | 直接调用（如 `add(1, 2)`），或通过变量（如 `const fn = add; fn(1, 2)`）。 | 通过对象调用（如 `obj.method()`），类似于 `obj.method.call(obj)`。 |
+| **this 关键字** | `this` 的值取决于调用上下文（全局调用时通常为 `window` 或 `undefined`，箭头函数继承外层 `this`）。 | `this` 默认指向调用该方法的对象（除非使用箭头函数或显式绑定）。 |
+| **作用域**    | 全局或模块作用域，可在任何地方调用。     | 绑定到对象，访问对象内部的属性（如 `this.property`）。 |
+| **示例场景** | 通用工具函数，如计算或验证。             | 对象行为，如数组的 `push()` 方法操作自身。 |
+
+#### 详细解释
+1. **函数的独立性**：
+   - 函数可以脱离任何对象存在。它是一个一等公民（first-class citizen），可以像变量一样赋值、传递或返回。
+   - 示例：
+     ```javascript
+     function greet(name) {
+       return `Hello, ${name}!`;
+     }
+     console.log(greet('World'));  // 输出: Hello, World!
+     ```
+
+2. **方法的绑定性**：
+   - 方法必须是对象的一个属性。当你调用它时，JavaScript 会自动将 `this` 绑定到该对象。这使得方法能轻松访问对象的其他属性或方法。
+   - 示例：
+     ```javascript
+     const person = {
+       name: 'Alice',
+       greet: function() {  // 这是一个方法
+         return `Hello, ${this.name}!`;  // this 指向 person 对象
+       }
+     };
+     console.log(person.greet());  // 输出: Hello, Alice!
+     ```
+   - 如果你将方法提取出来作为普通函数调用，`this` 就会丢失：
+     ```javascript
+     const extracted = person.greet;
+     console.log(extracted());  // 输出: Hello, undefined!（严格模式下为错误）
+     ```
+
+3. **箭头函数的特殊情况**：
+   - 如果方法使用箭头函数定义（如 `greet: () => { ... }`），则 `this` 不会绑定到对象，而是继承外层作用域。这在某些场景（如事件处理）有用，但会改变方法的“绑定”行为。
+
+#### 实际应用建议
+- 用**函数** 处理不依赖对象的逻辑（如数学计算）。
+- 用**方法** 封装对象的操作（如 DOM 元素的 `addEventListener` 方法）。
+- 记住：所有方法本质上都是函数，但不是所有函数都是方法。
+
+如果需要更多代码示例或特定场景的演示，请提供细节！
+
+## 作为函数方法调用函数
+在 JavaScript 中, 函数是对象。JavaScript 函数有它的属性和方法。
+
+call() 和 apply() 是预定义的函数方法。 两个方法可用于调用函数，两个方法的第一个参数必须是对象本身。
+
+## JavaScript 闭包
+
+[JavaScript 闭包](https://www.runoob.com/js/js-function-closures.html)
+
+后面一个实例中， a 是一个 全局 变量。
+
+在web页面中全局变量属于 window 对象。
+
+全局变量可应用于页面上的所有脚本。
+
+在第一个实例中， a 是一个 局部 变量。
+
+局部变量只能用于定义它函数内部。对于其他的函数或脚本代码是不可用的。
+
+全局和局部变量即便名称相同，它们也是两个不同的变量。修改其中一个，不会影响另一个的值。
+
+Note	变量声明时如果不使用 var 关键字，那么它就是一个全局变量，即便它在函数内定义。
+
+##  JavaScript 内嵌函数
+[JavaScript](https://www.runoob.com/js/js-function-closures.html)
+
+所有函数都能访问全局变量。  
+
+实际上，在 JavaScript 中，所有函数都能访问它们上一层的作用域。
+
+JavaScript 支持嵌套函数。嵌套函数可以访问上一层的函数变量。
+
+该实例中，内嵌函数 plus() 可以访问父函数的 counter 变量：
+
+emmbed function
+>>>>>>> 107c84b26f5ff4d00b6fdd03060e5087d5fbedcb

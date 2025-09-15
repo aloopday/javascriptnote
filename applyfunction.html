@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> appy array</title>
+    </head>
+    <body>
+        <p id="demo">myobject</p>
+        <script>
+            let myObject,myArray;
+            function myFunction(a,b){
+                return a *b;
+            }
+            myArray =[10,2]
+            myObject=myFunction.apply(myObject,myArray); //return 20
+            document.getElementById("demo").innerHTML =myObject;
+        </script>
+    </body>
+</html>
