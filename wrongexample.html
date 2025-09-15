@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="vieport" content="width=device-width initial-scale=1.0">
+        <title>Global variable</title>
+    </head>
+    <body>
+        <p>局部变量计数器</p>
+        <button type="button" onclick="myFunction()">counter</button>
+        <p id="demo">0</p>
+        <script>
+            function add(){
+                let counter =0;
+                return counter +=1;
+            }
+            function myFunction(){
+                document.getElementById("demo").innerHTML=add();
+            }
+        </script>
+    </body>
+</html>
