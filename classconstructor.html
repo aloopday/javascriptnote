@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Constructor class</title>
+    </head>
+    <body>
+        <h2>JavaScript the method of class</h2>
+        <p>pass the parameter to "age()" method</p>
+        <p id="demo"></p>
+        <script>
+            class Charles{
+                constructor(name, year){
+                    this.name=name;
+                    this.year=year;
+                }
+                age(x){
+                    return x-this.year;
+                }
+            }
+            let date =new Date();
+            let year=date.getFullYear();
+            let charles = new Charles("港村大叔",2022);
+            document.getElementById("demo").innerHTML="港村大叔 " +charles.age(year) + " years old."
+        </script>
+    </body>
+</html>
