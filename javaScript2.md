@@ -541,3 +541,32 @@ JavaScript 支持嵌套函数。嵌套函数可以访问上一层的函数变量
 
 emmbed function
 >>>>>>> 107c84b26f5ff4d00b6fdd03060e5087d5fbedcb
+
+## JavaScript 类(class)
+[JavaScript 类(class)](https://www.runoob.com/js/js-class-intro.html)
+
+类是用于创建对象的模板。
+
+我们使用 class 关键字来创建一个类，类体在一对大括号 {} 中，我们可以在大括号 {} 中定义类成员的位置，如方法或构造函数。
+
+每个类中包含了一个特殊的方法 constructor()，它是类的构造函数，这种方法用于创建和初始化一个由 class 创建的对象。
+
+创建一个类的语法格式如下：
+```
+class ClassName {
+  constructor() { ... }
+}
+实例：
+```
+```
+实例
+class Runoob {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
+}
+```
+以上实例创建了一个类，名为 "Runoob"。
+
+类中初始化了两个属性： "name" 和 "url"。

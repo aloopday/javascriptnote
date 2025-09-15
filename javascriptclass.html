@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>JavaScript class</title>
+    </head>
+    <body>
+        <h2>JavaScript class</h2>
+        <p> How to use JavaScript class</p>
+        <p id="demo"></p>
+        <script>
+            class charles{
+                constructor(name,url){
+                    this.name=name;
+                    this.url=url;
+                }
+            }
+            let site =new charles("港村大叔","https://www.youtube.com/@HKUCharles");
+            document.getElementById("demo").innerHTML="This is charles youtube channel "+site.name+": "+site.url;
+        </script>
+    </body>
+</html>
