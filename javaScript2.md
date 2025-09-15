@@ -493,3 +493,15 @@ call() 和 apply() 是预定义的函数方法。 两个方法可用于调用函
 
 Note	变量声明时如果不使用 var 关键字，那么它就是一个全局变量，即便它在函数内定义。
 
+##  JavaScript 内嵌函数
+[JavaScript](https://www.runoob.com/js/js-function-closures.html)
+
+所有函数都能访问全局变量。  
+
+实际上，在 JavaScript 中，所有函数都能访问它们上一层的作用域。
+
+JavaScript 支持嵌套函数。嵌套函数可以访问上一层的函数变量。
+
+该实例中，内嵌函数 plus() 可以访问父函数的 counter 变量：
+
+emmbed function
