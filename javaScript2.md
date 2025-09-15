@@ -570,3 +570,117 @@ class Runoob {
 以上实例创建了一个类，名为 "Runoob"。
 
 类中初始化了两个属性： "name" 和 "url"。
+
+## 类表达式
+类表达式是定义类的另一种方法。类表达式可以命名或不命名。命名类表达式的名称是该类体的局部名称。
+
+类表达式
+类表达式是定义类的另一种方法。类表达式可以命名或不命名。命名类表达式的名称是该类体的局部名称
+
+```
+// 未命名/匿名类
+let Runoob = class {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
+};
+console.log(Runoob.name);
+// output: "Runoob"
+ 
+// 命名类
+let Runoob = class Runoob2 {
+  constructor(name, url) {
+    this.name = name;
+    this.url = url;
+  }
+};
+console.log(Runoob.name);
+// 输出: "Runoob2"
+
+```
+
+构造方法
+
+构造方法是一种特殊的方法：
+
+构造方法名为 constructor()。
+构造方法在创建新对象时会自动执行。
+构造方法用于初始化对象属性。
+如果不定义构造方法，JavaScript 会自动添加一个空的构造方法
+
+## 类的方法
+
+
+我们使用关键字 class 创建一个类，可以添加一个 constructor() 方法，然后添加任意数量的方法。
+
+class ClassName {
+  constructor() { ... }
+  method_1() { ... }
+  method_2() { ... }
+  method_3() { ... }
+}
+
+The provided code is a JavaScript method named `age` that calculates the age based on the current year and a `year` property. Here's a step-by-step explanation:
+
+1. **Method Definition**:
+   - `age()` is a method, likely part of an object or class, since it uses `this` to reference a property.
+   - It takes no parameters.
+
+2. **Creating a Date Object**:
+   - `let date = new Date();` creates a new `Date` object representing the current date and time.
+
+3. **Getting the Current Year**:
+   - `date.getFullYear()` retrieves the four-digit year (e.g., 2025) from the `Date` object.
+
+4. **Calculating Age**:
+   - `this.year` refers to a `year` property on the object or class this method belongs to (e.g., a birth year).
+   - The method subtracts `this.year` from the current year (`date.getFullYear()`) to calculate the age.
+
+5. **Returning the Result**:
+   - The result of the subtraction (the age) is returned.
+
+### Example Usage
+Suppose this method is part of an object or class like this:
+
+```javascript
+const person = {
+  year: 1990,
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+};
+
+console.log(person.age()); // Output: 35 (if current year is 2025)
+```
+
+Or in a class:
+
+
+javascript
+
+
+```
+class Person {
+  constructor(year) {
+    this.year = year;
+  }
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+  }
+}
+
+const person = new Person(1990);
+console.log(person.age()); // Output: 35 (if current year is 2025)
+```
+
+
+### 
+Key Points
+- The method assumes `this.year` is a valid number (e.g., a birth year).
+- It calculates age based only on the year, ignoring months and days, so it may not be precise (e.g., if someone was born in December 1990, they might not yet be 35 in September 2025).
+- The method dynamically fetches the current year, so it always reflects the current time.
+
+If you need a more precise age calculation (considering months and days), the method would need to be modified to include `getMonth()` and `getDate()`. Let me know if you'd like an example of that!
