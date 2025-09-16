@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>JavasCript getter and setter</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            class Cars{
+                constructor(name){
+                    this._sitename =name;
+
+                }
+                get sitename(){
+                    return this._sitename;
+                }
+                set sitename(x){
+                    this._sitename= x;
+
+                }
+            }
+
+            let car =new Cars("Tesla");
+            document.getElementById("demo").innerHTML=car.sitename;
+        </script>
+    </body>
+</html>
