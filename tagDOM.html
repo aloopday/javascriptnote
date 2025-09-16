@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Tag DOM</title>
+    </head>
+    <body>
+        <p>Hello Hong Kong!</p>
+        <div id="main">
+            <p>DOM is very useful.</p>
+            <p>This instance show <b>getElementsByTagName </b>method</p>
+        </div>
+        <script>
+            let x=document.getElementById("main");
+            var y=x.getElementsByTagName("p");
+             // y=x.getElementsByTagName("p");
+            document.write('id="main"元素中的第一个段落为：' + y[0].innerHTML);
+        </script>
+    </body>
+   
+</html>
