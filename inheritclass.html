@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Inherit Class</title>
+    </head>
+    <body>
+        <h2>JavaScript inherit class</h2>
+        <p>JavsScript use "extends" keyword</p>
+        <p>"super" method to invoke the constructor function</p>
+        <p id="demo1"></p>
+        <p id="demo"></p>
+
+        <script>
+            class Site{
+                constructor(name){
+                    this.sitename=name;
+                }
+                present(){
+                    return 'I like ' + this.sitename;
+                }
+            }
+           
+            class Google extends Site{
+                constructor(name,age){
+                    super(name);
+                    this.age=age;
+                }
+                show(){
+                    return this.present()+', it create '+ this.age + ' years.'
+                }
+            }
+
+            let noob =new Google("charles talk show",3);
+            document.getElementById("demo").innerHTML=noob.show();
+            
+        </script>
+    </body>
+</html>
