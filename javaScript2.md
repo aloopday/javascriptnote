@@ -684,3 +684,11 @@ Key Points
 - The method dynamically fetches the current year, so it always reflects the current time.
 
 If you need a more precise age calculation (considering months and days), the method would need to be modified to include `getMonth()` and `getDate()`. Let me know if you'd like an example of that!
+
+注意：即使 getter 是一个方法，当你想获取属性值时也不要使用括号。
+
+getter/setter 方法的名称不能与属性的名称相同，在本例中属名为 sitename。
+
+很多开发者在属性名称前使用下划线字符 _ 将 getter/setter 与实际属性分开：
+
+以下实例使用下划线 _ 来设置属性，并创建对应的 getter/setter 方法：
