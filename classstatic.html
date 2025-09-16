@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>JavaScript static</title>
+    </head>
+    <body>
+        <h2>JavaScript static method</h2>
+        <p>static method can not invoke in the object ,just in the call to invoke</p>
+        <p id="demo"></p>
+        <script>
+            class Runoob{
+                constructor(name){
+                    this.name=name;
+                }
+                static hello(){
+                    return "Hello!!";
+                }
+            }
+
+            let car=new Runoob("Charles talk show");
+            // you can invoke static method in class 
+            document.getElementById("demo").innerHTML=Runoob.hello();
+
+            // you can not invoke static after instance the class.
+           // document.getElementById("demo").innerHTML=car.hello();
+            //report error.
+        </script>
+    </body>
+</html>
