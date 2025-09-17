@@ -696,3 +696,7 @@ getter/setter 方法的名称不能与属性的名称相同，在本例中属名
 ## JavaScript static
 
 [JavaScript static](https://www.runoob.com/js/js-class-static.html)
+
+##  JavaScript HTML DOM EventListener
+
+[JavaScript Dom EventListener](https://www.runoob.com/js/js-htmldom-eventlistener.html)
