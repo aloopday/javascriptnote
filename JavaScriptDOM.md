@@ -25,3 +25,21 @@ HTML DOM 教程
 [HTML DOM](https://www.runoob.com/js/js-htmldom-html.html)
 
 JavaScript HTML DOM - 改变 HTML
+
+## HTML stype property
+
+[Javascript to change style property](https://www.runoob.com/js/js-htmldom-css.html)
+
+## Html event .
+
+HTML DOM 允许我们通过触发事件来执行代码。
+
+比如以下事件：
+
+元素被点击。
+页面加载完成。
+输入框被修改。
+……
+在接下来的章节，你会学到更多关于事件的知识。
+
+本例改变了 id="id1" 的 HTML 元素的样式，当用户点击按钮时：
