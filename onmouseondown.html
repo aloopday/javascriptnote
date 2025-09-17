@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>mouseon and mouse down</title>
+        <script>
+            function lighton(){
+                document.getElementById("myimage").src="images/pic_bulbon.gif";
+            }
+            function lightoff(){
+                document.getElementById("myimage").src="images/pic_bulboff.gif";
+            }
+        </script>
+    </head>
+    <body>
+        <img id="myimage" onmousedown="lighton()" onmouseup="lightoff()" src="images/pic_bulboff.gif" width="100" height="180">
+    </body>
+</html>
