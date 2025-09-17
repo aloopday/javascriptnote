@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=viewport initial-scale=1.0">
+        <title>On change</title>
+        <script>
+            function myFunction(){
+                let x=document.getElementById("fname");
+                x.value=x.value.toUpperCase();
+            }
+        </script>
+    </head>
+    <body>
+       Input Your name: <input type="text" id="fname" onchange="myFunction()">
+       <p>When you leave the box , function will be triggered, will transfer litter case alphabet to upppercase</p>
+        
+    </body>
+</html>
