@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> Change the color of the element</title>
+        <style>
+            body{
+                background-color: rgb(15, 209, 57);
+            }
+        </style>
+
+    </head>
+    <body>
+        <h2>This is a chained dog wash shop.</h2>
+        <p>Dog wash.</p>
+        <p>Dog groooming </p>
+        <p>Dog swimming</p>
+        <button onclick="myFunction()">click me </button>
+        <script>
+            function myFunction(){
+                let myCollection=document.getElementsByTagName("p");
+                let i;
+                for(i=0;i<myCollection.length;i++){
+                    myCollection[i].style.color="yellow";
+                }
+            }
+        </script>
+    </body>
+</html>
