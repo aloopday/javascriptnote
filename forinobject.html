@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>for...in</title>
+    </head>
+    <body>
+        <p>Click the down button, loop the object "person" attributes</p>
+        <button onclick="myFunction()">Click here</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction(){
+                let x;
+                let txt="";
+                let person={fname:"Bill",lname:"Gates",age:56}; 
+                for(x in person){
+                    txt = txt +person[x];
+                }
+            }
+
+         	document.getElementById("demo").innerHTML=txt;
+        </script>
+
+
+
+    
+    </body>
+</html>

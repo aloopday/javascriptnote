@@ -106,3 +106,21 @@ NodeList 只能通过索引来获取。
 节点列表无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。
 
 add mthod to object function
+
+JavaScript 类
+JavaScript 是面向对象的语言，但 JavaScript 不使用类。
+
+在 JavaScript 中，不会创建类，也不会通过类来创建对象（就像在其他面向对象的语言中那样）。
+
+JavaScript 基于 prototype，而不是基于类的。
+
+## JavaScript for...in 循环
+[Javascript for...in](https://www.runoob.com/js/js-objects.html)
+
+```
+for (variable in object)
+{
+    执行的代码……
+}
+
+```
