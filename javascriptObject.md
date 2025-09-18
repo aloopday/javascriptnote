@@ -6,3 +6,12 @@ JavaScript 对象
 
 
 JavaScript 对象就是一个 name:value 集合。
+
+##  JavaScript 的对象是可变的
+对象是可变的，它们是通过引用来传递的。
+
+以下实例的 person 对象不会创建副本：
+```
+var x = person;  // 不会创建 person 的副本，是引用
+```
+如果修改 x ，person 的属性也会改变：
