@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Constructor</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function Person(first,last,age,eye,hair){
+                this.firstName =first;
+                this.lastName=last;
+                this.age=age;
+                this.eyColor=eye;
+                this.hair=hair;
+            }
+
+            let myBrother=new Person("Charles","wong",18,"black","black");
+            let mySister=new Person("Olivia","Wang",6,"black","black");
+            document.getElementById("demo").innerHTML="My brother age is "+myBrother.age+"<br>"+"My sister age is "+mySister.age+" years old."
+
+
+
+
+
+
+        </script>
+
+    </body>
+</html>

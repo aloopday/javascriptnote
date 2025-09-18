@@ -124,3 +124,5 @@ for (variable in object)
 }
 
 ```
+
+## [proto](https://www.runoob.com/js/js-object-prototype.html)
