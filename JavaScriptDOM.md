@@ -76,3 +76,5 @@ HTML 事件的例子：
 var child = document.getElementById("p1");
 child.parentNode.removeChild(child);
 
+## JavScript HTML DOM (Collection)
+[JavaScript HTML DOM](https://www.runoob.com/js/js-htmldom-collections.html)
