@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>How to create a node(element)</title>
+    </head>
+    <body>
+        <div id="div1">
+            <p id="p1"> This is a dog wash store</p>
+            <p id="p2"> You can pick up your dog.</p>
+
+        </div>
+        <script>
+            let para =document.createElement("p");
+            let node =document.createTextNode("This is a good dog grooming store.");
+            para.appendChild(node);
+            let element=document.getElementById("div1");
+            element.appendChild(para);
+        </script>
+    </body>
+</html>
