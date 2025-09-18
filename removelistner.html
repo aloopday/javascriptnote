@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Remove addEventListener</title>
+        <style>
+            #div1{
+                background-color:rgb(0, 38, 255);
+                border:1px solid;
+                padding:50px;
+                color:white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            div element add "onmousemove" , When mouse move in the box wil display random number.
+            <p>click button to remove event</p>
+            <button onclick="removeHandler()" id="myBtn">Click me</button>
+        </div>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("div1").addEventListener("mousemove",myFunction);
+            function myFunction(){
+                document.getElementById("demo").innerHTML=Math.random();
+            }
+            function removeHandler(){
+                document.getElementById("div1").removeEventListener("mousemove",myFunction);
+            }
+        </script>
+    </body>
+</html>
