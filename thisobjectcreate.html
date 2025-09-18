@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="uf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>this fucntion  to create a  object</title>
+    </head>
+    <body>
+        <script>
+
+            function person(firstname,lastname,age,skin){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.age=age;
+                this.skin=skin;
+
+            }
+
+            myBrother=new person("Charles","Wong",59,"yellow");
+            document.write("My brother "+myBrother.firstname+myBrother.lastname+" is a "+myBrother.skin +" skin person.")
+        </script>
+    </body>
+</html>
