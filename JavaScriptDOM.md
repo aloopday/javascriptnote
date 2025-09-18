@@ -78,3 +78,29 @@ child.parentNode.removeChild(child);
 
 ## JavScript HTML DOM (Collection)
 [JavaScript HTML DOM](https://www.runoob.com/js/js-htmldom-collections.html)
+
+
+HTMLCollection 与 NodeList 的区别
+HTMLCollection 是 HTML 元素的集合。
+
+NodeList 是一个文档节点的集合。
+
+NodeList 与 HTMLCollection 有很多类似的地方。
+
+NodeList 与 HTMLCollection 都与数组对象有点类似，可以使用索引 (0, 1, 2, 3, 4, ...) 来获取元素。
+
+NodeList 与 HTMLCollection 都有 length 属性。
+
+HTMLCollection 元素可以通过 name，id 或索引来获取。
+
+NodeList 只能通过索引来获取。
+
+只有 NodeList 对象有包含属性节点和文本节点。
+
+节点列表不是一个数组！
+
+节点列表看起来可能是一个数组，但其实不是。
+
+你可以像数组一样，使用索引来获取元素。
+
+节点列表无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。
