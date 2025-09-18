@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> Capture</title>
+        <style>
+            div{
+                background-color:#adff50;
+                border:1px solid;
+                padding:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>This instance indicate add different event,popup and capture </p>
+        <div id="div1">
+            <p id="p1">click paragraph , POP up</p>
+
+        </div><br>
+        <div id="div2">
+            <p id="p2">Click paragraph, I am capture.</p>
+        </div>
+        <script>
+            document.getElementById("p1").addEventListener("click",function(){alert("you click p1!");},false);
+            document.getElementById("div1").addEventListener("click",function(){
+                alert("you click div1");
+            },false);
+            document.getElementById("p2").addEventListener("click",function(){alert("you click p2");},true);
+            
+            document.getElementById("div2").addEventListener("click",function(){alert("you click div2");},true);
+        </script>
+    </body>
+</html>
