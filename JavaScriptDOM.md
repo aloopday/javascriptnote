@@ -68,3 +68,11 @@ HTML 事件的例子：
 
 ## JavaScript Node
 [JavaScript Node](https://www.runoob.com/js/js-htmldom-elements.html)
+
+如果能够在不引用父元素的情况下删除某个元素，就太好了。
+不过很遗憾。DOM 需要清楚您需要删除的元素，以及它的父元素。
+以下代码是已知要查找的子元素，然后查找其父元素，再删除这个子元素（删除节点必须知道父节点）：
+
+var child = document.getElementById("p1");
+child.parentNode.removeChild(child);
+
