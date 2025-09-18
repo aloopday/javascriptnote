@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>my construtor function </title>
+    </head>
+    <body>
+        <h2>create a new constructor function</h2>
+        <script>
+            
+            function person(firstname, lastname,age,hair){
+                this.firstname=firstname;
+                this.lastname=lastname;
+                this.age=age;
+                this.hair=hair;
+                
+                this.changeName=changeName;
+                function changeName(name){
+                    this.lastname=name;
+                }
+            }
+
+            myBrother=new person("charles","wang",55,"black");
+            myBrother.changeName("Liu");
+            document.write(myBrother.lastname);
+        </script>
+    </body>
+</html>

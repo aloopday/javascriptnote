@@ -104,3 +104,5 @@ NodeList 只能通过索引来获取。
 你可以像数组一样，使用索引来获取元素。
 
 节点列表无法使用数组的方法： valueOf(), pop(), push(), 或 join() 。
+
+add mthod to object function
