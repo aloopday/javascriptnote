@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Nodelist loop</title>
+    </head>
+    <body>
+        <h2>JavaScript HTML DOM!</h2>
+        <p>Hello World!</p>
+        <p>Hello Hong Kong .</p>
+        <p>Click the button to change the the color of element p.</p>
+        <button  onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction(){
+                let myNodelist =document.querySelectorAll("p");
+                let i;
+                for(i=0;i<myNodelist.length;i++){
+                    myNodelist[i].style.color="red";
+                }
+            }
+        </script>
+    </body>
+</html>
