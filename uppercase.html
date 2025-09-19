@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Array</title>
+    </head>
+    <body>
+        <p id="demo">Click to create a array,and invoke ucase()</p>
+        <button onclick="myFunction()">click me </button>
+        <script>
+            Array.prototype.myUcase=function(){
+                for(i=0;i<this.length;i++){
+                    this[i]=this[i].toUpperCase();
+                }
+
+            }
+
+            function myFunction(){
+                let classMates =["alex","isabella","olivia","nicole"];
+                classMates.myUcase();
+                let x=document.getElementById("demo");
+                x.innerHTML=classMates;
+
+            }
+        </script>
+    </body>
+</html>
