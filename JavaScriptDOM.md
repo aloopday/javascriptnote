@@ -196,4 +196,8 @@ Date 对象, Array 对象, 以及 Person 对象从 Object.prototype 继承。
 使用 prototype 属性就可以给对象的构造函数添加新的属性
 
 
+## to number 
+[to number](https://www.runoob.com/js/js-obj-number.html)
 
+## JavaScript 字符串（String） 对象
+[toString](https://www.runoob.com/js/js-obj-string.html)
