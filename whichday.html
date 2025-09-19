@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title> which day</title>
+    </head>
+    <body>
+        <p id="demo">Click to display array</p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction(){
+                let d =new Date();
+                let weekday=new Array(7);
+                weekday[0]="Sunday";
+                weekday[1]="Monday";
+                weekday[2]="Tuesday";
+                weekday[3]="Wednesday";
+                weekday[4]="Thursday";
+                weekday[5]="Friday";
+                weekday[6]="Saturday";
+                let x =document.getElementById("demo");
+                x.innerHTML=weekday[d.getDay()];
+            }
+        </script>
+    </body>
+</html>

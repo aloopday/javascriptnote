@@ -10,6 +10,9 @@
             <p id="demo"></p>
             <p id="year"></p>
             <button onclick="myFunction()">Click me </button>
+            <p id="time"></p>
+            <p id="utc"></p>
+          
         <script>
 
             let d=new Date();
@@ -17,11 +20,17 @@
             function myFunction(){
                 let x =document.getElementById("year");
                 x.innerHTML=d.getFullYear();
+                let y =document.getElementById("time");
+                y.innerHTML=d.getTime();
+                let u=document.getElementById("utc");
+                u.innerHTML=d.toUTCString();
+
             }
 
 
 
             document.getElementById("demo").innerHTML=d;
+            
 
         </script>
     </body>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Clock</title>
+        <script>
+            function startTime(){
+                let today= new Date();
+                let h=today.getHours();
+                let m=today.getMinutes();
+                let s=today.getSeconds(); //add zero before number less than 10;
+                m=checkTime(m);
+                s=checkTime(s);
+                document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+                t=setTimeout(function(){startTime()},500);
+
+            }
+
+            function checkTime(i){
+                if(i<10){
+                    i="0"+i;
+
+                }
+                return i;
+            }
+        </script>
+    </head>
+    <body onload="startTime()">
+        <div id="txt"></div>
+        
+
+    </body>
+</html>
