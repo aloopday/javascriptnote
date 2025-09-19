@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>locate the string</title>
+    </head>
+    <body>
+        <p id="p1">Click the button to locate where "locate" first occurs.</p>
+        <p id="p2">0</p>
+        <button onclick="myFunction()">click me</button>
+        <script>
+            function myFunction(){
+                let str=document.getElementById("p1").innerHTML;
+                let n=str.indexOf("locate");
+                document.getElementById("p2").innerHTML=n+1;
+            }
+        </script>
+    </body>
+</html>

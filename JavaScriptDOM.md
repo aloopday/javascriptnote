@@ -201,3 +201,4 @@ Date 对象, Array 对象, 以及 Person 对象从 Object.prototype 继承。
 
 ## JavaScript 字符串（String） 对象
 [toString](https://www.runoob.com/js/js-obj-string.html)
+## JavaScript  string length
