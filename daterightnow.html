@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>new date()</title>
+    </head>
+    <body>
+
+            <p id="demo"></p>
+            <p id="year"></p>
+            <button onclick="myFunction()">Click me </button>
+        <script>
+
+            let d=new Date();
+            
+            function myFunction(){
+                let x =document.getElementById("year");
+                x.innerHTML=d.getFullYear();
+            }
+
+
+
+            document.getElementById("demo").innerHTML=d;
+
+        </script>
+    </body>
+</html>
