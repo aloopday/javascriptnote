@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>JavsScript object</title>
+    </head>
+    <body>
+        <h2>JavaScript object</h2>
+        <p id="demo"></p>
+        <script>
+            function Person(first,last,age,eye){
+                this.firstName=first;
+                this.lastName=last;
+                this.age=age;
+                this.eyeColor=eye;
+            }
+            Person.prototype.nationnality ="English";
+            let myFather =new Person("Alex","Wang",50,"red");
+            document.getElementById("demo").innerHTML="My father's nationnality is "+myFather.nationnality+" .";
+        </script>
+    </body>
+</html>

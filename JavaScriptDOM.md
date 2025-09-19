@@ -126,3 +126,74 @@ for (variable in object)
 ```
 
 ## [proto](https://www.runoob.com/js/js-object-prototype.html)
+
+## 原型链
+在 JavaScript 中，对象通过原型链（prototype chain）来实现继承。当一个对象尝试访问一个属性或方法时，JavaScript 会首先检查该对象自身是否有这个属性或方法。如果没有，它会沿着原型链向上查找。
+```
+let obj = {};
+console.log(obj.toString()); // 输出: [object Object]
+
+```
+// 这个 `toString` 方法实际上是从 `Object.prototype` 继承过来的
+在上面的例子中，obj 对象没有定义 toString 方法，因此 JavaScript 沿着原型链查找，最终在 Object.prototype 中找到该方法。
+
+## 修改原型
+你可以动态地修改对象的原型，这样可以影响到所有基于该原型创建的对象：
+
+实例
+```
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.sayHello = function() {
+    console.log("Hello, my name is " + this.name);
+};
+
+let bob = new Person("Bob");
+bob.sayHello(); // 输出: Hello, my name is Bob
+
+// 修改原型
+Person.prototype.sayGoodbye = function() {
+    console.log("Goodbye from " + this.name);
+};
+```
+bob.sayGoodbye(); // 输出: Goodbye from Bob
+在这个例子中，我们在 Person.prototype 上添加了一个新的方法 sayGoodbye，bob 对象立即就可以访问到这个新方法。
+
+Object.create 方法
+Object.create 方法允许你创建一个新对象，并将其原型设置为指定的对象。
+```
+let personPrototype = {
+    sayHello: function() {
+        console.log("Hello, my name is " + this.name);
+    }
+};
+
+let alice = Object.create(personPrototype);
+alice.name = "Alice";
+alice.sayHello(); // 输出: Hello, my name is Alice
+```
+在这个例子中，alice 的原型是 personPrototype，因此 alice 对象可以访问 sayHello 方法。
+
+## prototype 继承
+所有的 JavaScript 对象都会从一个 prototype（原型对象）中继承属性和方法：
+
+Date 对象从 Date.prototype 继承。
+Array 对象从 Array.prototype 继承。
+Person 对象从 Person.prototype 继承。
+所有 JavaScript 中的对象都是位于原型链顶端的 Object 的实例。
+
+JavaScript 对象有一个指向一个原型对象的链。当试图访问一个对象的属性时，它不仅仅在该对象上搜寻，还会搜寻该对象的原型，以及该对象的原型的原型，依次层层向上搜索，直到找到一个名字匹配的属性或到达原型链的末尾。
+
+Date 对象, Array 对象, 以及 Person 对象从 Object.prototype 继承。
+
+添加属性和方法
+有的时候我们想要在所有已经存在的对象添加新的属性或方法。
+
+另外，有时候我们想要在对象的构造函数中添加属性或方法。
+
+使用 prototype 属性就可以给对象的构造函数添加新的属性
+
+
+
