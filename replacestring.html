@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="utf-8">
+    <title>repalce string</title>
+
+    </head>
+   
+<body>
+    <p>replace "Microsoft" to "Baidu ;"</p>
+    <button onclick="myFunction()">Click me</button>
+    <p id="demo">Please visit Microsoft!</p>
+    <script>
+        function myFunction(){
+            let str=document.getElementById("demo").innerHTML;
+            let txt =str.replace("Microsoft","Baidu");
+            document.getElementById("demo").innerHTML=txt;
+        }
+    </script>
+</body>
+
+</html>
