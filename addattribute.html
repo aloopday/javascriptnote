@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name ="viewport" content=width-device-width initial-scale="1.0">
+        <title>prototype</title>
+    </head>
+    <body>
+        <h2>JavsScript object</h2>
+        <p id="demo"></p>
+       <script>
+        function Person(first,last,age,eye){
+            this.firstName =first;
+            this.lastName=last;
+            this.age=age;
+            this.eyeColor =eye;
+            this.nationality="English";
+        }
+
+        let myFather = new Person("Charles","Wang",55,"dark");
+        let myMother = new Person("Olivia","Liu",56,"black");
+
+        document.getElementById("demo").innerHTML="My father's nationality is  " +myFather.nationality+ ". My mother's nationality is  " + myMother.nationality+" .";
+
+
+       </script>
+    </body>
+</html>
