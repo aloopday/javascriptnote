@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Sort</title>
+    </head>
+    <body>
+        <p id="demo">ascending order</p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction(){
+                let studentsName=["Alex","Isabella","Olivia","Kate","Ala","Bob"];
+                studentsName.sort();
+                let x=document.getElementById("demo");
+                x.innerHTML=studentsName;
+
+            }
+        </script>
+    </body>
+</html>
