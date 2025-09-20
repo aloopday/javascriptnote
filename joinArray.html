@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+
+        <title>Join the element of array</title>
+
+    </head>
+
+    <p>Demonstrate the function of "join" in array</p>
+    <button onclick="myFunction()">click me </button>
+    <p id="demo"></p>
+    <script>
+
+        function myFunction(){
+            let food=["bread","soap","donut","water"];
+            //let x=document.getElementById("demo");
+            //x.innerHTML=food.join("-");
+            document.getElementById("demo").innerHTML=food.join("&");
+        }
+        
+    </script>
+</html>
