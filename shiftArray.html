@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>How to delete first element.</title>
+    </head>
+    <body>
+        <p id="demo">Click to delete first element</p>
+        <p id="demo2"></p>
+        <button onclick="myFunction()">Click me</button>
+        
+        <script>
+            let familyMember=["father","mother","grad-mother","grad-father"]
+            function myFunction(){
+                let d= familyMember.shift();
+                let x = document.getElementById("demo");
+                x.innerHTML="This is a new array due to delete familyMember:  "+familyMember;
+
+                document.getElementById("demo2").innerHTML="delete element is : " +d
+
+            }
+        </script>
+    </body>
+</html>
