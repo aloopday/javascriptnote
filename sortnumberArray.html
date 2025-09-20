@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Number Sort</title>
+    </head>
+    <body>
+        <p id="demo">click the button, follow ascending order </p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction(){
+                let numbers=[40,100,1,5,25,10];
+                numbers.sort(function(a,b){return a-b});
+                let x=document.getElementById("demo");
+                x.innerHTML=numbers;
+            }
+        </script>
+    </body>
+</html>
