@@ -192,3 +192,6 @@ function functionName(parameters) {
 }
 
 ```
+
+## JavaScript Math（算数） 对象
+[JavaScript Math](https://www.runoob.com/js/js-obj-math.html)
