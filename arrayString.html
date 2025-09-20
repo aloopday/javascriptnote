@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Array to String</title>
+    </head>
+    <body>
+        <p id="demo">Click button,transfer array to string and return.</p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            function myFunction(){
+                let fruits=["Appel","Banana","Orange","Mango"];
+                let str=fruits.toString();
+                let x=document.getElementById("demo");
+                x.innerHTML=str;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>unshift array</title>
+    </head>
+    <body>
+        <p id="demo">Click button to insert element.</p>
+        <button onclick="myFunction()">click me</button>
+        <script>
+            function myFunction(){
+                let fruits=["apple","peach","orange","grape"];
+                fruits.unshift("Pineapple","Lemon","banana");
+                let x=document.getElementById("demo");
+                x.innerHTML=fruits;
+            }
+        </script>
+        <p><b>Notice:</b>unshift()method </p>
+    </body>
+</html>
