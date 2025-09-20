@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Fruit</title>
+    </head>
+    <body>
+        <p id="demo">Click to delete the last element.</p>
+        <button onclick="myFunction()">Click me </button>
+        <script>
+            let fruits =["Apple","Peach","Banana","peanut"];
+            function myFunction(){
+                fruits.pop();
+                let x=document.getElementById("demo");
+                x.innerHTML=fruits;
+            }
+        </script>
+    </body>
+</html>

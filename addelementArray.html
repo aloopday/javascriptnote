@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width initial-scale=1.0">
+        <title></title>
+    </head>
+    <body>
+        <p>Introduce the function of array.push()</p>
+        <p id="demo"></p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            let food=["noodles","rice","bread"];
+            function myFunction(){
+               food.push("pork");
+               let x=document.getElementById("demo");
+               x.innerHTML=food;
+            }
+
+        </script>
+    </body>
+</html>
