@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Array.prototype.myUcase</title>
+    </head>
+    <body>
+        <p id="demo">Click the button to create a Array.Invoke ucase()method,and display result.</p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            Array.prototype.myUcase=function(){
+                for(i=0;i<this.length;i++){
+                    this[i]=this[i].toUpperCase();
+                }
+            }
+            function myFunction(){
+                let dogs=["Japan-dog","China-dog","usa-dog","newzland-dog"];
+                dogs.myUcase();
+                let x=document.getElementById("demo");
+                x.innerHTML=dogs;
+            }
+        </script>
+    </body>
+</html>
