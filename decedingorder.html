@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>deceding Order</title>
+    </head>
+    <body>
+        <p> descending order</p>
+        <p id="demo"></p>
+        <button onclick="myFunction()">Click me</button>
+        <script>
+            let number=[98,89,54,100,560,987,1,3];
+            function myFunction(){
+                 number.sort(function(a,b){
+                return b-a;
+
+            })
+            let x=document.getElementById("demo");
+            x.innerHTML=number;
+
+            }
+           
+        </script>
+    </body>
+</html>
