@@ -209,3 +209,6 @@ If you have a specific follow-up question or want a deeper dive into any part (e
 ## JavaScript Boolean（布尔） 对象
 
 [Boolean](https://www.runoob.com/js/js-obj-boolean.html)
+
+## JavaScript RegExp 对象
+[JavaScript RegExp](https://www.runoob.com/js/js-obj-regexp.html);
