@@ -76,3 +76,71 @@ function myFunction(){
 `join()` 的作用是将数组元素合并为一个字符串，方便在页面上显示或进一步处理。在你的代码中，`fruits.join()` 将 `["Banana", "Orange", "Apple", "Mango"]` 转换为 `"Banana,Orange,Apple,Mango"`，并显示在 ID 为 `demo` 的 HTML 元素中。
 
 如果你有关于 `join()` 的其他问题或想修改代码（例如更改分隔符），请告诉我！
+
+Let me explain the provided JavaScript code, focusing on the `slice()` method and how the code works.
+
+### Code Breakdown
+```javascript
+function myFunction() {
+    var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+    var citrus = fruits.slice(1, 3);
+    var x = document.getElementById("demo");
+    x.innerHTML = citrus;
+}
+```
+
+### Explanation of `slice()`
+- The `slice()` method is a built-in JavaScript array method.
+- It **extracts a portion of an array** and returns it as a new array, without modifying the original array.
+- **Syntax**: `array.slice(start, end)`
+  - `start`: The index (zero-based) where extraction begins (inclusive).
+  - `end`: The index where extraction ends (exclusive). If omitted, it extracts until the end of the array.
+  - Returns a new array containing the extracted elements.
+- **Key Notes**:
+  - The original array remains unchanged.
+  - The `end` index is not included in the result.
+
+### Step-by-Step Analysis of the Code
+1. **Array Initialization**:
+   - `fruits` is an array: `["Banana", "Orange", "Lemon", "Apple", "Mango"]`.
+   - Indexes: `Banana` (0), `Orange` (1), `Lemon` (2), `Apple` (3), `Mango` (4).
+
+2. **`slice(1, 3)`**:
+   - `fruits.slice(1, 3)` extracts elements from index `1` (inclusive) to index `3` (exclusive).
+   - This includes elements at indexes `1` and `2`: `["Orange", "Lemon"]`.
+   - The result is stored in the `citrus` variable as a new array: `["Orange", "Lemon"]`.
+   - The `fruits` array remains unchanged: `["Banana", "Orange", "Lemon", "Apple", "Mango"]`.
+
+3. **DOM Manipulation**:
+   - `document.getElementById("demo")` retrieves the HTML element with `id="demo"`.
+   - `x.innerHTML = citrus` sets the content of the `"demo"` element to the `citrus` array.
+   - When an array is assigned to `innerHTML`, it is converted to a string using the `toString()` method, which joins the array elements with commas. So, `citrus` becomes `"Orange,Lemon"`.
+
+4. **Result**:
+   - The HTML element with `id="demo"` will display: `Orange,Lemon`.
+
+### Example Scenario
+Assume this HTML:
+```html
+<div id="demo"></div>
+<button onclick="myFunction()">Click me</button>
+```
+
+- Initially, the `div` is empty.
+- When the button is clicked, `myFunction()` runs, and the `div` displays: `Orange,Lemon`.
+
+### Key Points
+- **Effect of `slice()`**: It creates a new array (`citrus`) with elements `["Orange", "Lemon"]` without altering `fruits`.
+- **Output**: The `citrus` array is displayed as a comma-separated string (`Orange,Lemon`) in the `"demo"` element.
+- **Difference from `pop()`**: Unlike `pop()` (from your previous question), which removes an element and modifies the original array, `slice()` does not modify the original array and only extracts a subset.
+
+### Example of `slice()` Behavior
+```javascript
+let arr = ["A", "B", "C", "D"];
+let subset = arr.slice(1, 3); // Returns ["B", "C"]
+console.log(subset); // ["B", "C"]
+console.log(arr); // ["A", "B", "C", "D"] (unchanged)
+```
+
+If you have more questions about `slice()`, the code, or how it compares to `pop()`, let me know!
+
