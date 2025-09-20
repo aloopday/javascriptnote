@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let str='Guang cun da shu';
+            let pattern1=new RegExp('\\w','g');// There is a escape character, so as Regx;
+            let pattern2=new RegExp('\w','g');// no escape character, so as a string.
+            let pattern3=/\w+/g;// same as first one .
+
+            document.write(pattern1.test(str))// true;
+            document.write("<br>");
+            document.write(pattern2.test(str));// output false;
+            document.write("<br>");
+            document.write(pattern3.test(str))// output true
+        </script>
+    </body>
+</html>
