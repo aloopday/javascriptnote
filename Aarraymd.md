@@ -206,3 +206,6 @@ With HTML like:
 
 If you have a specific follow-up question or want a deeper dive into any part (e.g., `splice()` variations, DOM behavior, or comparison with other methods), please let me know!
 
+## JavaScript Boolean（布尔） 对象
+
+[Boolean](https://www.runoob.com/js/js-obj-boolean.html)
